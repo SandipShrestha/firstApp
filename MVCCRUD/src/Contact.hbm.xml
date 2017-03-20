@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="myapp.model.Contact" table="emp_contacts">
+        <id name="empID" type="string" column="empID">
+            <generator class="assigned" />
+           
+        </id>
+        
+        <property name="empName" type="string" column="empName" not-null="true" />
+        <property name="mobileNo" type="string" column="mobileNo" not-null="true" />
+        <property name="officeNo" type="string" column="officeNo"  not-null="true" />
+        <property name="homeNo" type="string" column="homeNo"  not-null="true" />
+        <property name="email" type="string" column="email"  not-null="true" />
+    </class>
+   
+</hibernate-mapping>
